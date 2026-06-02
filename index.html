@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    background:#041524;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+html,
+body{
+    margin:0;
+    padding:0;
+    width:100%;
+    min-height:100%;
+    overflow-x:hidden;
+}
+
+    details{
+    transition:0.3s;
+}
+
+details[open]{
+    background:#12304d;
+}
+    
+    .card{
+    width:100%;
+    box-sizing:border-box;
+    background:#0c2238;
+    margin:15px 0;
+    padding:15px;
+    border-radius:15px;
+    border-left:5px solid #66b3ff;
+    box-shadow:0 0 15px rgba(102,179,255,.15);
+}
+
+
+
+.banner{
+    width:100%;
+    min-height:100vh;
+    padding:20px;
+    box-sizing:border-box;
+}
+
+h1{
+    text-align:center;
+    color:#66b3ff;
+    font-size:clamp(2rem,8vw,3rem);
+    text-shadow:0 0 10px rgba(102,179,255,.5);
+}
+
+
+summary{
+    font-size:1.4rem;
+    font-weight:bold;
+    color:#66b3ff;
+    cursor:pointer;
+    list-style:none;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
+
+summary::after{
+    content:"▼";
+    float:right;
+    transition:.3s;
+}
+
+details[open] summary::after{
+    transform:rotate(180deg);
+}
+
+details p{
+    margin-top:15px;
+    line-height:1.6;
+}
+
+.topo{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.aviao{
+    display:block;
+    width:100%;
+    max-width:100%;
+    height:auto;
+    border-radius:15px;
+}
+    
+
+
+
+.card h2{
+    margin-top:0;
+    color:#66b3ff;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="banner">
+
+    <div class="topo">
+        <h1>✈️ ENGENHARIA AERONÁUTICA</h1>
+        <p>Feira de Ciências • 3º G
+        Membro do grupo: Saulo Vitor, J. Vitor Gomes
+        Felipe Éden, Icaro Guilherme & Isabelle Almeida</p>
+    </div>
+
+    <details class="card" name="accordion">
+    <summary>📖 O que é?</summary>
+    <p>
+        A Engenharia Aeronáutica é o ramo da engenharia 
+        responsável pelo projeto, desenvolvimento, 
+        fabricação, testes e manutenção de aeronaves. 
+        Essa área busca criar aviões e helicópteros mais seguros, 
+        eficientes e tecnológicos, utilizando conhecimentos de matemática, 
+        física e computação. Seu trabalho é essencial para 
+        a evolução da aviação civil, militar e de pesquisa.
+    </p>
+</details>
+
+<details class="card" name="accordion">
+    <summary>⚙️ Princípios</summary>
+    <p>
+        A Engenharia Aeronáutica baseia-se 
+        em diversas áreas do conhecimento. 
+        Entre elas estão a aerodinâmica
+        que estuda o movimento do ar ao redor das aeronaves; 
+        a mecânica, responsável pelas estruturas e sistemas; 
+        a eletrônica, utilizada nos instrumentos de navegação; 
+        e a ciência dos materiais, que busca materiais leves e resistentes.
+        Esses princípios garantem desempenho, segurança e eficiência 
+        durante o voo.
+    </p>
+</details>
+
+<details class="card" name="accordion">
+    <summary>🎓 Formação</summary>
+      <p>Para atuar como engenheiro aeronáutico é necessário concluir uma graduação na área, 
+          que geralmente possui duração de cinco anos. 
+          Durante o curso, os estudantes aprendem disciplinas como:
+          física, cálculo, aerodinâmica e mecânica dos fluidos. 
+          Além disso, realizam projetos, estágios e atividades práticas 
+          que os preparam para o mercado de trabalho.
+    </p>
+</details>
+
+<details class="card" name="accordion">
+    <summary>📊 ENEM</summary>
+    <p>
+        O ingresso em cursos de Engenharia Aeronáutica 
+        pode ocorrer por meio do ENEM ou vestibulares específicos. 
+        As notas de corte variam conforme a instituição e a concorrência, 
+        mas normalmente exigem um desempenho elevado, principalmente em Matemática e Ciências da Natureza. 
+        Uma boa preparação é fundamental para conquistar uma vaga.
+    </p>
+</details>
+
+<details class="card" name="accordion">
+    <summary>🚀 Áreas de atuação</summary>
+    <p>
+        O profissional de Engenharia Aeronáutica pode trabalhar em empresas de fabricação de aeronaves,
+        manutenção aeronáutica, pesquisa e desenvolvimento, segurança de voo e setor aeroespacial. 
+        Também existem oportunidades em órgãos governamentais, 
+        companhias aéreas e centros de pesquisa voltados para novas tecnologias.
+    </p>
+</details>
+
+    <details class="card">
+    <summary>🌎 Curiosidades</summary>
+    <p>
+        A aviação moderna utiliza tecnologias desenvolvidas por engenheiros aeronáuticos para aumentar a segurança e reduzir o consumo de combustível.
+        Além disso, muitos conhecimentos da Engenharia Aeronáutica são aplicados em:
+        foguetes, satélites e veículos espaciais.
+        O Brasil também possui destaque mundial nesse setor 
+        graças ao desenvolvimento de aeronaves reconhecidas internacionalmente.
+    </p>
+</details>
+
+</div>
+</body>
+</html>
